@@ -1,0 +1,21 @@
+{
+  "name": "keylogic",
+  "version": "1.0.0",
+  "description": "A frontend JavaScript package for managing keyboard shortcuts/events.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacob-hackney/keylogic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jacob-hackney/keylogic/issues"
+  },
+  "homepage": "https://github.com/jacob-hackney/keylogic#readme"
+}
