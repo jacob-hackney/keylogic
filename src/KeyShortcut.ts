@@ -11,8 +11,7 @@ export class KeyShortcut {
         writable: true,
       });
       this.#keydowns.push((event) => {
-        event.preventDefault();
-        if (event.key.toLowerCase() === key) {
+        if (event.key === key) {
           this.#pressedKeys[key] = true;
           let allPressed = true;
           for (let k of keys) {
