@@ -4,8 +4,9 @@
     "module": "nodenext",
     "moduleResolution": "nodenext",
     "rootDir": "./src",
-    "outDir": "./build",
+    "outDir": "./build/src",
     "strict": true,
-    "declaration": true
+    "declaration": true,
+    "declarationDir": "./build/types"
   }
 }
