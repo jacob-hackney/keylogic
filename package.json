@@ -20,6 +20,5 @@
   "bugs": {
     "url": "https://github.com/jacob-hackney/keylogic/issues"
   },
-  "homepage": "https://github.com/jacob-hackney/keylogic#readme",
-  "types": "index.d.ts"
+  "homepage": "https://github.com/jacob-hackney/keylogic#readme"
 }
