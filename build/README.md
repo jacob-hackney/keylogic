@@ -35,7 +35,7 @@ myShortcut.unbind();
 myShortcut.bind();
 ```
 
-⚠️ When calling `createKeyShortcut`, always use the **key name**(event.key), not the key code or any other identifier.
+⚠️ When calling `createKeyShortcut`, always use the **key name**(event.key), not the key code or any other identifier. Created shortcuts will attempt to block a default shortcut in your browser, if present.
 
 ### 🗝️ Supported Key Names
 
