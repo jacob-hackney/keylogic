@@ -2,13 +2,13 @@
 
 A frontend JavaScript package for managing keyboard shortcuts/events.
 
-## Installation
+## 📦 Installation
 
 ```sh
 npm install keylogic --save
 ```
 
-## Usage
+## 🚀 Usage
 
 ### Creating a keyboard shortcut:
 
@@ -18,18 +18,47 @@ npm install keylogic --save
 // Being a default export, you can name this function whatever you want.
 import createKeyShortcut from "keylogic";
 
-// The first argument is a callback for when the shortcut is pressed, and the rest are for defining the keybinds.
-const myShortcut = createKeyShortcut(event => { ... }, "control", "alt", "a");
+// The first argument is a callback function for when the shortcut is pressed, and the rest define the keybinds.
+const myShortcut = createKeyShortcut(
+  (event) => {
+    /* Your callback */
+  },
+  "control",
+  "alt",
+  "a"
+);
 
 // To unbind the shortcut, simply call:
 myShortcut.unbind();
 
-// Don't worry, you can still re-bind it:
+// To re-bind it later:
 myShortcut.bind();
 ```
 
-When calling the `createKeyShortcut` function, _always_ use the name of the key, not the key code or anything else.
+⚠️ When calling `createKeyShortcut`, always use the **key name**(event.key), not the key code or any other identifier.
+
+### 🗝️ Supported Key Names
+
+- **Letters:** `a`-`z`
+
+- **Numbers:** `0`-`9`
+
+- **Modifier keys:** `control`, `alt`, `shift`, `meta` (Windows key, Command key, Chromebook search key)
+
+- **Other common keys:**
+
+  - `capslock`
+
+  - `tab`
+
+  - `enter`
+
+  - `escape`
+
+  - `backspace`
+
+  - `arrowup`, `arrowdown`, `arrowleft`, `arrowright`
 
 ## Credits
 
-Everything by Jacob Hackney.
+Everything by **Jacob Hackney**.
