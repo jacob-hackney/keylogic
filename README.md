@@ -35,29 +35,7 @@ myShortcut.unbind();
 myShortcut.bind();
 ```
 
-⚠️ When calling `createKeyShortcut`, always use the **key name**(event.key), not the key code or any other identifier. Created shortcuts will attempt to block a default shortcut in your browser, if present.
-
-### 🗝️ Supported Key Names
-
-- **Letters:** `a`-`z`
-
-- **Numbers:** `0`-`9`
-
-- **Modifier keys:** `control`, `alt`, `shift`, `meta` (Windows key, Command key, Chromebook search key)
-
-- **Other common keys:**
-
-  - `capslock`
-
-  - `tab`
-
-  - `enter`
-
-  - `escape`
-
-  - `backspace`
-
-  - `arrowup`, `arrowdown`, `arrowleft`, `arrowright`
+When calling the `createKeyShortcut` function, _always_ use the name of the key, not the key code or anything else.
 
 ## Credits
 
