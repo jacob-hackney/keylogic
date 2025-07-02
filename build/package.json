@@ -1,10 +1,13 @@
 {
   "name": "keylogic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A frontend JavaScript package for managing keyboard shortcuts/events.",
-  "main": "index.js",
+  "main": "src/index.js",
+  "types": "types/index.d.ts",
   "scripts": {
-    "build": "tsc && copy package.json build && copy README.md build && copy LICENSE build"
+    "prebuild": "powershell -Command \"if (Test-Path './build') { Remove-Item './build' -Recurse -Force }\"",
+    "build": "tsc",
+    "postbuild": "copy package.json build && copy README.md build && copy LICENSE build"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,5 @@
   "bugs": {
     "url": "https://github.com/jacob-hackney/keylogic/issues"
   },
-  "homepage": "https://github.com/jacob-hackney/keylogic#readme",
-  "types": "index.d.ts"
+  "homepage": "https://github.com/jacob-hackney/keylogic#readme"
 }
